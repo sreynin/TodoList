@@ -65,14 +65,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */ = {
+		A7126A452D3DEF7900B9D5D2 /* TodoListTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUILearningTests;
+			path = TodoListTests;
 			sourceTree = "<group>";
 		};
-		A7126A4F2D3DEF7900B9D5D2 /* SwiftUILearningUITests */ = {
+		A7126A4F2D3DEF7900B9D5D2 /* TodoListUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUILearningUITests;
+			path = TodoListUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				A7017BD92D437B4A009C4D3C /* TodoList */,
-				A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */,
-				A7126A4F2D3DEF7900B9D5D2 /* SwiftUILearningUITests */,
+				A7126A452D3DEF7900B9D5D2 /* TodoListTests */,
+				A7126A4F2D3DEF7900B9D5D2 /* TodoListUITests */,
 				A7126A332D3DEF7700B9D5D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				A7126A442D3DEF7900B9D5D2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */,
+				A7126A452D3DEF7900B9D5D2 /* TodoListTests */,
 			);
 			name = TodoListTests;
 			packageProductDependencies = (
@@ -220,7 +220,7 @@
 				A7126A4E2D3DEF7900B9D5D2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A7126A4F2D3DEF7900B9D5D2 /* SwiftUILearningUITests */,
+				A7126A4F2D3DEF7900B9D5D2 /* TodoListUITests */,
 			);
 			name = TodoListUITests;
 			packageProductDependencies = (
