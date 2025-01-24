@@ -6,6 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A7017BDA2D437B4A009C4D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD22D437B4A009C4D3C /* ContentView.swift */; };
+		A7017BDB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD42D437B4A009C4D3C /* SwiftUILearningApp.swift */; };
+		A7017BDC2D437B4A009C4D3C /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD52D437B4A009C4D3C /* TodoListView.swift */; };
+		A7017BDD2D437B4A009C4D3C /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD32D437B4A009C4D3C /* CreateTaskView.swift */; };
+		A7017BDE2D437B4A009C4D3C /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BCE2D437B4A009C4D3C /* TodoListModel.swift */; };
+		A7017BDF2D437B4A009C4D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD72D437B4A009C4D3C /* Assets.xcassets */; };
+		A7017BE02D437B4A009C4D3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */; };
+		A7017BE12D437B4A009C4D3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD82D437B4A009C4D3C /* README.md */; };
+		A7017BE22D437B4A009C4D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD72D437B4A009C4D3C /* Assets.xcassets */; };
+		A7017BE32D437B4A009C4D3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */; };
+		A7017BE42D437B4A009C4D3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD82D437B4A009C4D3C /* README.md */; };
+		A7017BE52D437B4A009C4D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD22D437B4A009C4D3C /* ContentView.swift */; };
+		A7017BE62D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD42D437B4A009C4D3C /* SwiftUILearningApp.swift */; };
+		A7017BE72D437B4A009C4D3C /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD52D437B4A009C4D3C /* TodoListView.swift */; };
+		A7017BE82D437B4A009C4D3C /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD32D437B4A009C4D3C /* CreateTaskView.swift */; };
+		A7017BE92D437B4A009C4D3C /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BCE2D437B4A009C4D3C /* TodoListModel.swift */; };
+		A7017BEA2D437B4A009C4D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD22D437B4A009C4D3C /* ContentView.swift */; };
+		A7017BEB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD42D437B4A009C4D3C /* SwiftUILearningApp.swift */; };
+		A7017BEC2D437B4A009C4D3C /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD52D437B4A009C4D3C /* TodoListView.swift */; };
+		A7017BED2D437B4A009C4D3C /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BD32D437B4A009C4D3C /* CreateTaskView.swift */; };
+		A7017BEE2D437B4A009C4D3C /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7017BCE2D437B4A009C4D3C /* TodoListModel.swift */; };
+		A7017BEF2D437B4A009C4D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD72D437B4A009C4D3C /* Assets.xcassets */; };
+		A7017BF02D437B4A009C4D3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */; };
+		A7017BF12D437B4A009C4D3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD82D437B4A009C4D3C /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A7126A432D3DEF7900B9D5D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7126A322D3DEF7700B9D5D2 /* SwiftUILearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7126A422D3DEF7900B9D5D2 /* SwiftUILearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUILearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7126A4C2D3DEF7900B9D5D2 /* SwiftUILearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUILearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7017BCE2D437B4A009C4D3C /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
+		A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7017BD22D437B4A009C4D3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7017BD32D437B4A009C4D3C /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		A7017BD42D437B4A009C4D3C /* SwiftUILearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILearningApp.swift; sourceTree = "<group>"; };
+		A7017BD52D437B4A009C4D3C /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A7017BD72D437B4A009C4D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7017BD82D437B4A009C4D3C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A7126A322D3DEF7700B9D5D2 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7126A422D3DEF7900B9D5D2 /* TodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7126A4C2D3DEF7900B9D5D2 /* TodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A7126A342D3DEF7700B9D5D2 /* SwiftUILearning */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUILearning;
-			sourceTree = "<group>";
-		};
 		A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftUILearningTests;
@@ -72,10 +102,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7017BCF2D437B4A009C4D3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7017BCE2D437B4A009C4D3C /* TodoListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7017BD12D437B4A009C4D3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7017BD62D437B4A009C4D3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7017BD22D437B4A009C4D3C /* ContentView.swift */,
+				A7017BD32D437B4A009C4D3C /* CreateTaskView.swift */,
+				A7017BD42D437B4A009C4D3C /* SwiftUILearningApp.swift */,
+				A7017BD52D437B4A009C4D3C /* TodoListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7017BD92D437B4A009C4D3C /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				A7017BCF2D437B4A009C4D3C /* Model */,
+				A7017BD12D437B4A009C4D3C /* Preview Content */,
+				A7017BD62D437B4A009C4D3C /* View */,
+				A7017BD72D437B4A009C4D3C /* Assets.xcassets */,
+				A7017BD82D437B4A009C4D3C /* README.md */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
 		A7126A292D3DEF7700B9D5D2 = {
 			isa = PBXGroup;
 			children = (
-				A7126A342D3DEF7700B9D5D2 /* SwiftUILearning */,
+				A7017BD92D437B4A009C4D3C /* TodoList */,
 				A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */,
 				A7126A4F2D3DEF7900B9D5D2 /* SwiftUILearningUITests */,
 				A7126A332D3DEF7700B9D5D2 /* Products */,
@@ -85,9 +154,9 @@
 		A7126A332D3DEF7700B9D5D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7126A322D3DEF7700B9D5D2 /* SwiftUILearning.app */,
-				A7126A422D3DEF7900B9D5D2 /* SwiftUILearningTests.xctest */,
-				A7126A4C2D3DEF7900B9D5D2 /* SwiftUILearningUITests.xctest */,
+				A7126A322D3DEF7700B9D5D2 /* TodoList.app */,
+				A7126A422D3DEF7900B9D5D2 /* TodoListTests.xctest */,
+				A7126A4C2D3DEF7900B9D5D2 /* TodoListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7126A312D3DEF7700B9D5D2 /* SwiftUILearning */ = {
+		A7126A312D3DEF7700B9D5D2 /* TodoList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7126A562D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearning" */;
+			buildConfigurationList = A7126A562D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoList" */;
 			buildPhases = (
 				A7126A2E2D3DEF7700B9D5D2 /* Sources */,
 				A7126A2F2D3DEF7700B9D5D2 /* Frameworks */,
@@ -107,19 +176,16 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A7126A342D3DEF7700B9D5D2 /* SwiftUILearning */,
-			);
-			name = SwiftUILearning;
+			name = TodoList;
 			packageProductDependencies = (
 			);
 			productName = SwiftUILearning;
-			productReference = A7126A322D3DEF7700B9D5D2 /* SwiftUILearning.app */;
+			productReference = A7126A322D3DEF7700B9D5D2 /* TodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A7126A412D3DEF7900B9D5D2 /* SwiftUILearningTests */ = {
+		A7126A412D3DEF7900B9D5D2 /* TodoListTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7126A592D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearningTests" */;
+			buildConfigurationList = A7126A592D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoListTests" */;
 			buildPhases = (
 				A7126A3E2D3DEF7900B9D5D2 /* Sources */,
 				A7126A3F2D3DEF7900B9D5D2 /* Frameworks */,
@@ -133,16 +199,16 @@
 			fileSystemSynchronizedGroups = (
 				A7126A452D3DEF7900B9D5D2 /* SwiftUILearningTests */,
 			);
-			name = SwiftUILearningTests;
+			name = TodoListTests;
 			packageProductDependencies = (
 			);
 			productName = SwiftUILearningTests;
-			productReference = A7126A422D3DEF7900B9D5D2 /* SwiftUILearningTests.xctest */;
+			productReference = A7126A422D3DEF7900B9D5D2 /* TodoListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A7126A4B2D3DEF7900B9D5D2 /* SwiftUILearningUITests */ = {
+		A7126A4B2D3DEF7900B9D5D2 /* TodoListUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7126A5C2D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearningUITests" */;
+			buildConfigurationList = A7126A5C2D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoListUITests" */;
 			buildPhases = (
 				A7126A482D3DEF7900B9D5D2 /* Sources */,
 				A7126A492D3DEF7900B9D5D2 /* Frameworks */,
@@ -156,11 +222,11 @@
 			fileSystemSynchronizedGroups = (
 				A7126A4F2D3DEF7900B9D5D2 /* SwiftUILearningUITests */,
 			);
-			name = SwiftUILearningUITests;
+			name = TodoListUITests;
 			packageProductDependencies = (
 			);
 			productName = SwiftUILearningUITests;
-			productReference = A7126A4C2D3DEF7900B9D5D2 /* SwiftUILearningUITests.xctest */;
+			productReference = A7126A4C2D3DEF7900B9D5D2 /* TodoListUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A7126A2D2D3DEF7700B9D5D2 /* Build configuration list for PBXProject "SwiftUILearning" */;
+			buildConfigurationList = A7126A2D2D3DEF7700B9D5D2 /* Build configuration list for PBXProject "TodoList" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +266,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7126A312D3DEF7700B9D5D2 /* SwiftUILearning */,
-				A7126A412D3DEF7900B9D5D2 /* SwiftUILearningTests */,
-				A7126A4B2D3DEF7900B9D5D2 /* SwiftUILearningUITests */,
+				A7126A312D3DEF7700B9D5D2 /* TodoList */,
+				A7126A412D3DEF7900B9D5D2 /* TodoListTests */,
+				A7126A4B2D3DEF7900B9D5D2 /* TodoListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +278,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BE22D437B4A009C4D3C /* Assets.xcassets in Resources */,
+				A7017BE32D437B4A009C4D3C /* Preview Assets.xcassets in Resources */,
+				A7017BE42D437B4A009C4D3C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BEF2D437B4A009C4D3C /* Assets.xcassets in Resources */,
+				A7017BF02D437B4A009C4D3C /* Preview Assets.xcassets in Resources */,
+				A7017BF12D437B4A009C4D3C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BDF2D437B4A009C4D3C /* Assets.xcassets in Resources */,
+				A7017BE02D437B4A009C4D3C /* Preview Assets.xcassets in Resources */,
+				A7017BE12D437B4A009C4D3C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BE52D437B4A009C4D3C /* ContentView.swift in Sources */,
+				A7017BE62D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
+				A7017BE72D437B4A009C4D3C /* TodoListView.swift in Sources */,
+				A7017BE82D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
+				A7017BE92D437B4A009C4D3C /* TodoListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BEA2D437B4A009C4D3C /* ContentView.swift in Sources */,
+				A7017BEB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
+				A7017BEC2D437B4A009C4D3C /* TodoListView.swift in Sources */,
+				A7017BED2D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
+				A7017BEE2D437B4A009C4D3C /* TodoListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7017BDA2D437B4A009C4D3C /* ContentView.swift in Sources */,
+				A7017BDB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
+				A7017BDC2D437B4A009C4D3C /* TodoListView.swift in Sources */,
+				A7017BDD2D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
+				A7017BDE2D437B4A009C4D3C /* TodoListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +348,12 @@
 /* Begin PBXTargetDependency section */
 		A7126A442D3DEF7900B9D5D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7126A312D3DEF7700B9D5D2 /* SwiftUILearning */;
+			target = A7126A312D3DEF7700B9D5D2 /* TodoList */;
 			targetProxy = A7126A432D3DEF7900B9D5D2 /* PBXContainerItemProxy */;
 		};
 		A7126A4E2D3DEF7900B9D5D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7126A312D3DEF7700B9D5D2 /* SwiftUILearning */;
+			target = A7126A312D3DEF7700B9D5D2 /* TodoList */;
 			targetProxy = A7126A4D2D3DEF7900B9D5D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -461,7 +551,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUILearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUILearning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoList";
 			};
 			name = Debug;
 		};
@@ -480,7 +570,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUILearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUILearning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoList";
 			};
 			name = Release;
 		};
@@ -521,7 +611,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7126A2D2D3DEF7700B9D5D2 /* Build configuration list for PBXProject "SwiftUILearning" */ = {
+		A7126A2D2D3DEF7700B9D5D2 /* Build configuration list for PBXProject "TodoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7126A542D3DEF7900B9D5D2 /* Debug */,
@@ -530,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7126A562D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearning" */ = {
+		A7126A562D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7126A572D3DEF7900B9D5D2 /* Debug */,
@@ -539,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7126A592D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearningTests" */ = {
+		A7126A592D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoListTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7126A5A2D3DEF7900B9D5D2 /* Debug */,
@@ -548,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7126A5C2D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "SwiftUILearningUITests" */ = {
+		A7126A5C2D3DEF7900B9D5D2 /* Build configuration list for PBXNativeTarget "TodoListUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7126A5D2D3DEF7900B9D5D2 /* Debug */,
