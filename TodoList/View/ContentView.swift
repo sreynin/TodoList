@@ -42,11 +42,10 @@ struct TodoListTableView:View {
             .onMove { indices, newoffset in
                 todos.move(fromOffsets: indices, toOffset: newoffset)
             }
+            .listRowSeparator(.hidden)
         }.scrollContentBackground(.hidden)
-            .padding(.vertical,(40))
+            .padding(.vertical,(0))
             
-          
-        
     }
 }
 
@@ -55,34 +54,38 @@ struct ContentView: View {
     @State  private var scale: CGFloat = 1.0
     @State  var areYouGoingToCreateView: Bool = false
     @State  var todolistArrObj :[TodoListModel] = []
- 
+   
     var body: some View {
         VStack {
             
             NavigationStack{
                 VStack{
+                    HStack{
+                        Text(Date.now, format: .dateTime.day().month().year())
+                            
+                    }.frame(maxWidth: .infinity, maxHeight:40, alignment: .trailing)
+                        .padding(.horizontal,(10))
                     if $todolistArrObj.isEmpty{
                         VStack{
                             Text("There are no items!")
                                 .font(.title)
                                 .fontWeight(.bold)
-                            
                             Text("Are you a ptoductive person? I think you should click the button below to add a bunch of items to your todo list!")
                                 .multilineTextAlignment(.center)
                                 .fontWeight(.bold)
                                 .padding(.horizontal, 30)
+                            
                             customButton(title: "Add Something 🤗 ", action: {
                                 areYouGoingToCreateView = true
                             })
                         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                            .padding(.vertical,(40))
+                            .padding(.vertical,(0))
                     }else{
                         TodoListTableView(todos: $todolistArrObj)
                     }
                         
                 }
                 .navigationTitle("Todo List")
-                 .foregroundColor(.indigo)
                  .toolbarBackgroundVisibility(.visible, for: .navigationBar)
                  .toolbar {
                         
@@ -93,9 +96,23 @@ struct ContentView: View {
                         }
                         
                         ToolbarItem(placement: .navigationBarTrailing) {
-                            EditButton()
+                            
+                            EditButton().disabled(self.todolistArrObj.isEmpty)
                         }
-                        
+                     ToolbarItem(placement: .bottomBar) {
+                         Button("complete") {
+                             self.todolistArrObj.removeAll()
+                         }.buttonStyle(.borderedProminent)
+                           .toolbarVisibility(.visible, for: .tabBar)
+                          .disabled(self.todolistArrObj.isEmpty)
+                     }
+                     ToolbarItem(placement: .bottomBar) {
+                         Button("History") {
+                             
+                         }.buttonStyle(.borderedProminent)
+                           .toolbarVisibility(.visible, for: .tabBar)
+                          
+                     }
                     }
                     .navigationDestination(isPresented: $areYouGoingToCreateView) {
                         CreateTaskView(todolistData: $todolistArrObj)

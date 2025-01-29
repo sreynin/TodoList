@@ -10,6 +10,7 @@ import SwiftUI
 struct TodoListView: View {
     @State var todos: TodoListModel
     @State var imagToggle = Image(systemName: "circle")
+    @State var imgeNM: String = "circle"
     
     var body: some View {
         HStack{
@@ -18,20 +19,24 @@ struct TodoListView: View {
                      .aspectRatio(contentMode: .fill)
                      .frame(width: 20, height: 20)
                      .onTapGesture {
-                         imagToggle = imagToggle == Image(systemName: "circle.fill") ? Image(systemName: "circle") : Image(systemName: "circle.fill")
-                         
+                         imgeNM = imgeNM == "circle" ? "circle.fill" : "circle"
+                         imagToggle = Image(systemName: imgeNM)
+                      
                      }
             Text("\(todos.title)")
                 .padding(.leading, 5)
                 .font(.headline)
                 .lineLimit(1)
-        }
+                
+        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+            .padding(EdgeInsets(top: 15, leading: 30, bottom: 15, trailing: 30))
+            .background(Color.random(randomOpacity: true))
+            .cornerRadius(10)
     }
 }
 #Preview {
     TodoListView(todos: TodoListModel(title: "", status: false))
 }
-
 
 
 
