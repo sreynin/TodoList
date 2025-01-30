@@ -21,7 +21,7 @@ struct OutlinedTextFieldStyle: TextFieldStyle {
 struct CreateTaskView: View {
     
     @State var taskname: String = ""
-    @Binding var todolistData: [TodoListModel]
+    var todoVM: TodoListVM
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -33,7 +33,7 @@ struct CreateTaskView: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                 
                 Button{
-                    todolistData.append(TodoListModel(title: taskname, status: false))
+                    todoVM.addItem(title: taskname, status: false)
                     print("Save button press==\(taskname)")
                     dismiss()
                  

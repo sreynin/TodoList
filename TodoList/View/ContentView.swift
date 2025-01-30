@@ -30,17 +30,17 @@ struct customButton:View {
 }
  
 struct TodoListTableView:View {
-    @Binding var todos: [TodoListModel]
+    var todoVM: TodoListVM
     var body: some View {
         List {
-            ForEach(todos) { todoObj in
+            ForEach(todoVM.todoList) { todoObj in
                     TodoListView(todos: todoObj)
             }
             .onDelete{indexset in
-                todos.remove(atOffsets: indexset)
+                todoVM.deleteItem(at: indexset )
             }
             .onMove { indices, newoffset in
-                todos.move(fromOffsets: indices, toOffset: newoffset)
+                todoVM.todoList.move(fromOffsets: indices, toOffset: newoffset)
             }
             .listRowSeparator(.hidden)
         }.scrollContentBackground(.hidden)
@@ -53,7 +53,7 @@ struct ContentView: View {
     
     @State  private var scale: CGFloat = 1.0
     @State  var areYouGoingToCreateView: Bool = false
-    @State  var todolistArrObj :[TodoListModel] = []
+    @StateObject private var todoVM = TodoListVM()
    
     var body: some View {
         VStack {
@@ -65,7 +65,7 @@ struct ContentView: View {
                             
                     }.frame(maxWidth: .infinity, maxHeight:40, alignment: .trailing)
                         .padding(.horizontal,(10))
-                    if $todolistArrObj.isEmpty{
+                    if todoVM.todoList.isEmpty{
                         VStack{
                             Text("There are no items!")
                                 .font(.title)
@@ -81,7 +81,7 @@ struct ContentView: View {
                         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                             .padding(.vertical,(0))
                     }else{
-                        TodoListTableView(todos: $todolistArrObj)
+                        TodoListTableView(todoVM:todoVM)
                     }
                         
                 }
@@ -97,14 +97,14 @@ struct ContentView: View {
                         
                         ToolbarItem(placement: .navigationBarTrailing) {
                             
-                            EditButton().disabled(self.todolistArrObj.isEmpty)
+                            EditButton().disabled(self.todoVM.todoList.isEmpty)
                         }
                      ToolbarItem(placement: .bottomBar) {
                          Button("complete") {
-                             self.todolistArrObj.removeAll()
+                             self.todoVM.todoList.removeAll()
                          }.buttonStyle(.borderedProminent)
                            .toolbarVisibility(.visible, for: .tabBar)
-                          .disabled(self.todolistArrObj.isEmpty)
+                          .disabled(self.todoVM.todoList.isEmpty)
                      }
                      ToolbarItem(placement: .bottomBar) {
                          Button("History") {
@@ -115,7 +115,10 @@ struct ContentView: View {
                      }
                     }
                     .navigationDestination(isPresented: $areYouGoingToCreateView) {
-                        CreateTaskView(todolistData: $todolistArrObj)
+                        CreateTaskView(todoVM: todoVM)
+                    }
+                    .onAppear {
+                        todoVM.fetchItems()
                     }
                 }
             

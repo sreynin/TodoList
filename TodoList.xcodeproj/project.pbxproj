@@ -31,6 +31,14 @@
 		A7017BEF2D437B4A009C4D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD72D437B4A009C4D3C /* Assets.xcassets */; };
 		A7017BF02D437B4A009C4D3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD02D437B4A009C4D3C /* Preview Assets.xcassets */; };
 		A7017BF12D437B4A009C4D3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7017BD82D437B4A009C4D3C /* README.md */; };
+		A7236A3C2D4B668500C9B41E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7236A3A2D4B668500C9B41E /* Model.xcdatamodeld */; };
+		A7236A3D2D4B668500C9B41E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7236A3A2D4B668500C9B41E /* Model.xcdatamodeld */; };
+		A7236A412D4B673100C9B41E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A402D4B672E00C9B41E /* PersistenceController.swift */; };
+		A7236A422D4B673100C9B41E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A402D4B672E00C9B41E /* PersistenceController.swift */; };
+		A7236A432D4B673100C9B41E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A402D4B672E00C9B41E /* PersistenceController.swift */; };
+		A7236A452D4B675E00C9B41E /* TodoListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A442D4B675400C9B41E /* TodoListVM.swift */; };
+		A7236A462D4B675E00C9B41E /* TodoListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A442D4B675400C9B41E /* TodoListVM.swift */; };
+		A7236A472D4B675E00C9B41E /* TodoListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7236A442D4B675400C9B41E /* TodoListVM.swift */; };
 		A74979752D4A182F004040F1 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74979742D4A1827004040F1 /* color.swift */; };
 		A74979762D4A182F004040F1 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74979742D4A1827004040F1 /* color.swift */; };
 		A74979772D4A182F004040F1 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74979742D4A1827004040F1 /* color.swift */; };
@@ -65,6 +73,9 @@
 		A7126A322D3DEF7700B9D5D2 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7126A422D3DEF7900B9D5D2 /* TodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7126A4C2D3DEF7900B9D5D2 /* TodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7236A3B2D4B668500C9B41E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A7236A402D4B672E00C9B41E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		A7236A442D4B675400C9B41E /* TodoListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVM.swift; sourceTree = "<group>"; };
 		A74979742D4A1827004040F1 /* color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,12 +147,15 @@
 		A7017BD92D437B4A009C4D3C /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				A7236A3F2D4B671600C9B41E /* Network */,
 				A74979732D4A1817004040F1 /* Extension */,
 				A7017BCF2D437B4A009C4D3C /* Model */,
-				A7017BD12D437B4A009C4D3C /* Preview Content */,
+				A7236A3E2D4B669700C9B41E /* ViewModel */,
 				A7017BD62D437B4A009C4D3C /* View */,
 				A7017BD72D437B4A009C4D3C /* Assets.xcassets */,
 				A7017BD82D437B4A009C4D3C /* README.md */,
+				A7017BD12D437B4A009C4D3C /* Preview Content */,
+				A7236A3A2D4B668500C9B41E /* Model.xcdatamodeld */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -164,6 +178,22 @@
 				A7126A4C2D3DEF7900B9D5D2 /* TodoListUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A7236A3E2D4B669700C9B41E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7236A442D4B675400C9B41E /* TodoListVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7236A3F2D4B671600C9B41E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A7236A402D4B672E00C9B41E /* PersistenceController.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A74979732D4A1817004040F1 /* Extension */ = {
@@ -327,9 +357,12 @@
 				A7017BE52D437B4A009C4D3C /* ContentView.swift in Sources */,
 				A7017BE62D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
 				A7017BE72D437B4A009C4D3C /* TodoListView.swift in Sources */,
+				A7236A3D2D4B668500C9B41E /* Model.xcdatamodeld in Sources */,
+				A7236A472D4B675E00C9B41E /* TodoListVM.swift in Sources */,
 				A74979752D4A182F004040F1 /* color.swift in Sources */,
 				A7017BE82D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
 				A7017BE92D437B4A009C4D3C /* TodoListModel.swift in Sources */,
+				A7236A412D4B673100C9B41E /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7236A422D4B673100C9B41E /* PersistenceController.swift in Sources */,
 				A74979762D4A182F004040F1 /* color.swift in Sources */,
 				A7017BEA2D437B4A009C4D3C /* ContentView.swift in Sources */,
 				A7017BEB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
+				A7236A462D4B675E00C9B41E /* TodoListVM.swift in Sources */,
+				A7236A3C2D4B668500C9B41E /* Model.xcdatamodeld in Sources */,
 				A7017BEC2D437B4A009C4D3C /* TodoListView.swift in Sources */,
 				A7017BED2D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
 				A7017BEE2D437B4A009C4D3C /* TodoListModel.swift in Sources */,
@@ -350,9 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7236A432D4B673100C9B41E /* PersistenceController.swift in Sources */,
 				A7017BDA2D437B4A009C4D3C /* ContentView.swift in Sources */,
 				A7017BDB2D437B4A009C4D3C /* SwiftUILearningApp.swift in Sources */,
 				A7017BDC2D437B4A009C4D3C /* TodoListView.swift in Sources */,
+				A7236A452D4B675E00C9B41E /* TodoListVM.swift in Sources */,
 				A74979772D4A182F004040F1 /* color.swift in Sources */,
 				A7017BDD2D437B4A009C4D3C /* CreateTaskView.swift in Sources */,
 				A7017BDE2D437B4A009C4D3C /* TodoListModel.swift in Sources */,
@@ -510,6 +548,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +578,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,6 +704,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7236A3A2D4B668500C9B41E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7236A3B2D4B668500C9B41E /* Model.xcdatamodel */,
+			);
+			currentVersion = A7236A3B2D4B668500C9B41E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A7126A2A2D3DEF7700B9D5D2 /* Project object */;
 }

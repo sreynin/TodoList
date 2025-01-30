@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodoListView: View {
-    @State var todos: TodoListModel
+    @State var todos: TodoListDataModel
     @State var imagToggle = Image(systemName: "circle")
     @State var imgeNM: String = "circle"
     
@@ -23,7 +23,7 @@ struct TodoListView: View {
                          imagToggle = Image(systemName: imgeNM)
                       
                      }
-            Text("\(todos.title)")
+            Text("\(String(describing: todos.title))")
                 .padding(.leading, 5)
                 .font(.headline)
                 .lineLimit(1)
@@ -35,7 +35,7 @@ struct TodoListView: View {
     }
 }
 #Preview {
-    TodoListView(todos: TodoListModel(title: "", status: false))
+    TodoListView(todos:TodoListDataModel())
 }
 
 
