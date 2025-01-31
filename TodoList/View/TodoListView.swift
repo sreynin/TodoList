@@ -23,7 +23,7 @@ struct TodoListView: View {
                          imagToggle = Image(systemName: imgeNM)
                       
                      }
-            Text("\(String(describing: todos.title))")
+            Text("\(String(describing: todos.title ?? ""))")
                 .padding(.leading, 5)
                 .font(.headline)
                 .lineLimit(1)

@@ -30,7 +30,7 @@ struct customButton:View {
 }
  
 struct TodoListTableView:View {
-    var todoVM: TodoListVM
+    @ObservedObject var todoVM: TodoListVM
     var body: some View {
         List {
             ForEach(todoVM.todoList) { todoObj in

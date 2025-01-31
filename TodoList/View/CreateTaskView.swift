@@ -19,9 +19,9 @@ struct OutlinedTextFieldStyle: TextFieldStyle {
 }
 
 struct CreateTaskView: View {
-    
+    let context = PersistenceController.shared.container.viewContext
     @State var taskname: String = ""
-    var todoVM: TodoListVM
+           var todoVM: TodoListVM
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -33,7 +33,13 @@ struct CreateTaskView: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                 
                 Button{
-                    todoVM.addItem(title: taskname, status: false)
+                    let newItem = TodoListDataModel(context: context)
+                        newItem.id = UUID()
+                    newItem.title = taskname
+                    newItem.status = false
+
+                    todoVM.todoList.append(newItem)
+                    PersistenceController.shared.save()
                     print("Save button press==\(taskname)")
                     dismiss()
                  
