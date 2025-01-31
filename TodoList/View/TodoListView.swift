@@ -19,9 +19,7 @@ struct TodoListView: View {
                      .aspectRatio(contentMode: .fill)
                      .frame(width: 20, height: 20)
                      .onTapGesture {
-                         imgeNM = imgeNM == "circle" ? "circle.fill" : "circle"
-                         imagToggle = Image(systemName: imgeNM)
-                      
+                         updateImgSelected()
                      }
             Text("\(String(describing: todos.title ?? ""))")
                 .padding(.leading, 5)
@@ -29,9 +27,17 @@ struct TodoListView: View {
                 .lineLimit(1)
                 
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-            .padding(EdgeInsets(top: 15, leading: 30, bottom: 15, trailing: 30))
-            .background(Color.random(randomOpacity: true))
-            .cornerRadius(10)
+            
+    }
+    func updateImgSelected() {
+        if imgeNM == "circle" {
+            imgeNM = "checkmark"
+            imagToggle = Image("checkmark")
+        }else
+        {
+            imgeNM = "circle"
+            imagToggle = Image(systemName: imgeNM)
+        }
     }
 }
 #Preview {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24B83" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="HistoryDataModel" representedClassName="HistoryDataModel" syncable="YES" codeGenerationType="class"/>
     <entity name="TodoListDataModel" representedClassName="TodoListDataModel" syncable="YES" codeGenerationType="class">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="status" attributeType="Boolean" usesScalarValueType="YES"/>

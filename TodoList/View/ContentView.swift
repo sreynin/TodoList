@@ -44,7 +44,7 @@ struct TodoListTableView:View {
             }
             .listRowSeparator(.hidden)
         }.scrollContentBackground(.hidden)
-            .padding(.vertical,(0))
+            .padding(.vertical,(40))
             
     }
 }
@@ -60,11 +60,11 @@ struct ContentView: View {
             
             NavigationStack{
                 VStack{
-                    HStack{
-                        Text(Date.now, format: .dateTime.day().month().year())
-                            
-                    }.frame(maxWidth: .infinity, maxHeight:40, alignment: .trailing)
-                        .padding(.horizontal,(10))
+//                    HStack{
+//                        Text(Date.now, format: .dateTime.day().month().year())
+//                            
+//                    }.frame(maxWidth: .infinity, maxHeight:40, alignment: .trailing)
+//                        .padding(.horizontal,(10))
                     if todoVM.todoList.isEmpty{
                         VStack{
                             Text("There are no items!")
@@ -79,7 +79,7 @@ struct ContentView: View {
                                 areYouGoingToCreateView = true
                             })
                         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                            .padding(.vertical,(0))
+                            .padding(.vertical,(40))
                     }else{
                         TodoListTableView(todoVM:todoVM)
                     }
