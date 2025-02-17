@@ -9,11 +9,13 @@ import SwiftUI
 
 struct TodoListView: View {
     @State var todos: TodoListDataModel
-    @State var imagToggle = Image(systemName: "circle")
+    @State var todoVM : TodoListVM
+    @State var imagToggle :Image
     @State var imgeNM: String = "circle"
     
     var body: some View {
         HStack{
+          
             imagToggle
                      .resizable()
                      .aspectRatio(contentMode: .fill)
@@ -30,19 +32,26 @@ struct TodoListView: View {
             
     }
     func updateImgSelected() {
-        if imgeNM == "circle" {
-            imgeNM = "checkmark"
-            imagToggle = Image("checkmark")
-        }else
-        {
-            imgeNM = "circle"
-            imagToggle = Image(systemName: imgeNM)
+        todos.status.toggle()
+        imagToggle  = todos.status ? Image("checkmark") :Image(systemName: imgeNM)
+        self.updateItemStatus(status: todos.status)
+   
+    }
+   
+    func updateItemStatus(status:Bool){
+        let list = todoVM.todoList
+        for (i,dataitem) in list.enumerated() {
+            if dataitem.id == todos.id {
+                todoVM.updateItemStatus(at: i, status: status)
+                break
+            }
         }
+        
     }
 }
-#Preview {
-    TodoListView(todos:TodoListDataModel())
-}
+//#Preview {
+//    TodoListView(todos:TodoListDataModel(), todoVM: TodoListVM(), imagToggle: <#Image#>)
+//}
 
 
 

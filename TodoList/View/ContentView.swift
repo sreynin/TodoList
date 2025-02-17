@@ -34,7 +34,7 @@ struct TodoListTableView:View {
     var body: some View {
         List {
             ForEach(todoVM.todoList) { todoObj in
-                    TodoListView(todos: todoObj)
+                TodoListView(todos: todoObj, todoVM: todoVM, imagToggle: todoObj.status ? Image("checkmark") :Image(systemName: "circle"))
             }
             .onDelete{indexset in
                 todoVM.deleteItem(at: indexset )

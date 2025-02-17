@@ -38,4 +38,11 @@ class TodoListVM:ObservableObject {
         todoList.remove(atOffsets: indexSet)
            PersistenceController.shared.save()
        }
+    func updateItemStatus(at index: Int,status:Bool){
+            todoList[index].status = status
+            let itemToUpdate = todoList[index]
+           let _ =  context.updatedObjects.contains(itemToUpdate)
+       
+           PersistenceController.shared.save()
+    }
 }
